@@ -12,8 +12,13 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+header div a{
+    margin-left: 30px;
+}
 
-
+header div form{
+    margin-right: 30px;
+}
 .bg-color {
     background-color: var(--bg-color);
 }
@@ -49,6 +54,7 @@ header nav ul li a:hover{
 }
 
 @media (max-width: 999px){
+
     body {
         overflow: hidden;
     }
@@ -111,27 +117,21 @@ header nav ul li a:hover{
     transform: rotate(-45deg) translate(10px, -10px);
 }
 
-/* Largura da scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track (trilho) */
 ::-webkit-scrollbar-track {
-  background: white; /* cor do fundo */
+  background: white;
 }
 
-/* Handle (alça) */
 ::-webkit-scrollbar-thumb {
-  background: #000000; /* cor da barra */
+  background: #000000;
   border-radius: 10px;
 }
-
-/* Handle ao passar o mouse */
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
 }
-
 
 input,textarea{
     padding: 10px;
