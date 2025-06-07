@@ -1,4 +1,4 @@
-# 📒 Appunto
+# 📒 Appunto - EM DESENVOLVIMENTO
 
 **Appunto** é um aplicativo web pessoal para criar, visualizar e organizar anotações rápidas e resumos. Inspirado na ideia de fichas de estudo (cards), ele é simples, leve e fácil de usar.
 
