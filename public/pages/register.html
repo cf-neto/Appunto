@@ -15,7 +15,7 @@
         <main class="w-full h-[100dvh] flex justify-center items-center">
             <div class="register">
                 <h1 class="text-5xl font-bold text-center m-[35px]">Create a new account</h1>
-                <form class="flex items-center gap-[20px] flex-col">
+                <form action="../php/register.php" method="POST" class="flex items-center gap-[20px] flex-col">
                     <div class="input-box">
                         <input type="text" name="name" id="name" placeholder="Name" required>
                         <i class="bx bxs-user"></i>
@@ -36,5 +36,22 @@
             </div>
         </main>
     </body>
-    <script src="../js/utils.js"></script>
+    <script>
+        function showPasswordToggle(){
+            const input = document.getElementById('password');
+            const iconLock = document.getElementById('icon-lock');
+
+            if (!iconLock || !input) return;
+
+            iconLock.addEventListener('click', () => {
+                const isVisible = input.type === "text";
+                input.type = isVisible ? 'password' : 'text';
+                iconLock.classList.toggle('bxs-lock', isVisible);
+                iconLock.classList.toggle('bxs-lock-open', !isVisible);
+
+            });
+        };
+
+        showPasswordToggle();
+    </script>
 </html>
