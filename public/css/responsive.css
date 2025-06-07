@@ -1,0 +1,24 @@
+/* TABLETS */
+
+@media (max-width: 991px){
+    .login, .register{
+        width: 50%;
+    }
+}
+
+
+/* CELULARES GRANDES */
+
+@media (max-width: 767px){
+    .login, .register{
+        width: 60%;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 575px){
+    .login, .register{
+        width: 88%;
+    }
+}
