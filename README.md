@@ -22,6 +22,7 @@ Appunto permite que você:
 | HTML5      | Estrutura da interface              |
 | CSS3       | Estilização e responsividade        |
 | JavaScript | Interatividade na interface         |
+| Tailwind CSS | Utilitário para estilização rápida|
 
 ---
 
