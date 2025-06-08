@@ -29,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if ($stmt->execute()){
         header("Location: ../index.html");
         exit();
-        echo "User registered successfully!";
     }
     else{
         echo "Erro " . $stmt->error; 

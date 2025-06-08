@@ -1,8 +1,17 @@
+/* TELAS MENORES */
+
+@media (max-width: 1700px){
+    .login, .register{
+        width: 45%;
+    }
+}
+
+
 /* TABLETS */
 
 @media (max-width: 991px){
     .login, .register{
-        width: 50%;
+        width: 55%;
     }
 }
 
