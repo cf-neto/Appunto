@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $result = $stmt->get_result();
 
 
-    if (!$result->num_rows !== 1){
+    if ($result->num_rows !== 1){
         echo "Usuario não encontrado";
         exit();
     }
