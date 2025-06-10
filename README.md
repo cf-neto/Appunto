@@ -23,6 +23,7 @@ Appunto permite que você:
 | CSS3       | Estilização e responsividade        |
 | JavaScript | Interatividade na interface         |
 | Tailwind CSS | Utilitário para estilização rápida|
+| PHP          | Lógica de back-end e manipulação de sessões   |
 
 ---
 
@@ -30,3 +31,33 @@ Appunto permite que você:
 - Estudantes que desejam revisar conteúdos
 - Pessoas que gostam de registrar ideias rapidamente
 - Usuários que preferem apps simples, diretos e offline
+
+## 📂 Estrutura de Pastas
+
+```plaintext
+public/
+├── assets/
+│   ├── css/
+│   │   ├── config.css
+│   │   ├── home.css
+│   │   ├── login.css
+│   │   └── responsive.css
+│   └── js/
+│       └── utils.js
+├── index.html
+└── register.html
+
+src/
+├── config/
+│   └── config.php
+├── controllers/
+│   ├── login.php
+│   ├── logout.php
+│   └── register.php
+├── includes/
+│   └── auth.php
+└── views/
+    └── home.php
+
+.gitignore
+README.md
