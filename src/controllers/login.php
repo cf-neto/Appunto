@@ -1,7 +1,6 @@
 <?php
-ob_start();
 session_start();
-include_once('config.php');
+include_once('../config/config.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $email = $_POST['email'];
@@ -18,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         if (password_verify($password, $user['Password'])){
             $_SESSION['user'] = $user['Name'];
-            header('location: ../pages/home.php');
+            header('location: ../views/home.php');
             exit();
         }
         else{

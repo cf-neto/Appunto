@@ -1,9 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION['user'])) {
-    header("Location: ../index.html");
-    exit();
-}
+include_once('../includes/auth.php');
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +34,7 @@ if (!isset($_SESSION['user'])) {
                     <div class="line3"></div>
                 </div>
                 
-                <form action="../php/logout.php" method="POST" class="w-[50px] h-[50px] text-white flex justify-center items-center rounded-full gap-2
+                <form action="../controllers/logout.php" method="POST" class="w-[50px] h-[50px] text-white flex justify-center items-center rounded-full gap-2
                 hover:bg-white hover:text-black 
                 transition-colors duration-300 ease-in-out">
                     <button class="w-full h-full rounded-full flex justify-center items-center cursor-pointer" type="submit">
