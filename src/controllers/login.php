@@ -12,25 +12,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $stmt->execute();
     $result = $stmt->get_result();
 
-    if ($result->num_rows === 1){
-        $user = $result->fetch_assoc();
 
-        if (password_verify($password, $user['Password'])){
-            $_SESSION['user'] = $user['Name'];
-            header('location: ../views/home.php');
-            exit();
-        }
-        else{
-            echo "Password incorrect!";
-        }
-        
-    }
-    else{
+    if (!$result->num_rows !== 1){
         echo "Usuario não encontrado";
+        exit();
     }
+
+    $user = $result->fetch_assoc();
+
+    if(!password_verify($password, $user['Password'])){
+        echo "Password incorrect!";
+        exit();
+    }
+
+    $_SESSION['user'] = $user['Name'];
+    header('location: ../views/home.php');
+    exit();
 }
-
-
 
 $stmt->close();
 $conn->close();
