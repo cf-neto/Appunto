@@ -30,7 +30,7 @@ Appunto permite que você:
 ## 🧑‍🎓 Público-Alvo
 - Estudantes que desejam revisar conteúdos
 - Pessoas que gostam de registrar ideias rapidamente
-- Usuários que preferem apps simples, diretos e offline
+- Estudantes que querem acessar e editar suas anotações em qualquer dispositivo, apenas com seu login
 
 ## 📂 Estrutura de Pastas
 
